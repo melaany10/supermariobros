@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(101, 216, 236, 0.925);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(223, 125, 125);
+    }
+  }
+
+.imagen {
+    width: 100%;
+    padding: 5px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+@font-face {
+    font-family: Mario;
+    src: url(/fuentes/RetroMario-Regular.otf);
+}
+
+h1 {
+    font-family: Mario;
+    color: red;
+    text-shadow: 6px 6px 0 #4e4a4a;
+    -webkit-text-stroke: 2px black; 
+    font-size: 8vw;
+}
+
+h2 {
+    font-family: Mario;
+    color: blue;
+    text-shadow: 6px 6px #4e4a4a;
+    -webkit-text-stroke: 2px black; 
+    font-size: 8vw;
+}
+
+.container2 {
+    position: relative;
+    max-width: 200vw;
+    height: 25.05vw; /* ajusta la altura según tus necesidades */
+    margin: 0 auto;
+  }
+
+.container2 .mi-clase { 
+    width: 16vw; height: 16vw;
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    z-index: 2;
+}
+
+.animate__animated.animate__bounceInDown {
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__bounceInLeft {
+    --animate-duration: 4s;
+}
+
+/*
+.animate__animated.animate__fadeInLeftBig {
+    --animate-duration: 4s;
+}
+*/
+
+.mi-clase {
+    animation: mario 6s infinite;
+    position: relative;
+}
+
+@keyframes mario {
+    0%   {left: 0px;}
+    25%  {}
+    50%  {left: 50px; top: ;}
+    80% {top: 15px;}
+    100% {left: 1000px;}
+  }
+
+  .col {
+    height: 30px;
+  }
+
+  @media only screen and (min-width: 2983px) {
+    .mi-clase {
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        z-index: 2;
+        top: -10px;
+    }
+  }
