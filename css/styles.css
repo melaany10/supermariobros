@@ -23,13 +23,15 @@ body {
     z-index: -1;
 }
 
-@font-face {
-    font-family: Mario;
-    src: url(/fuentes/RetroMario-Regular.otf);
-}
+.concert-one-regular {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 h1 {
-    font-family: Mario !important; 
+    font-family: "Concert One", sans-serif; 
     color: red;
     text-shadow: 6px 6px 0 #4e4a4a;
     -webkit-text-stroke: 2px black; 
@@ -37,7 +39,7 @@ h1 {
 }
 
 h2 {
-    font-family: Mario;
+    font-family: "Concert One", sans-serif;
     color: blue;
     text-shadow: 6px 6px #4e4a4a;
     -webkit-text-stroke: 2px black; 
